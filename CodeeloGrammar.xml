@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<grammar version="1.0" xml:lang="ru-RU" xmlns="http://www.w3.org/2001/06/grammar" 
+         tag-format="semantics/1.0" root="Main">
+  <rule id="Main">
+    <ruleref uri="#subject" />
+    <ruleref uri="#action" />
+    <ruleref uri="#object" />
+  </rule>
+  <rule id="subject" scope="public">
+    <one-of>
+      <item>Кодило</item>
+    </one-of>
+  </rule>
+  <rule id="action" scope="public">
+    <one-of>
+      <item>открой</item>
+    </one-of>
+  </rule>
+  <rule id="object" scope="public">
+    <one-of>
+      <item>блокнот</item>
+      <item>калькулятор</item>
+      <item>реестр</item>
+    </one-of>
+  </rule>
+</grammar>
